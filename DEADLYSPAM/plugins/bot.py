@@ -15,15 +15,11 @@ from telethon.tl.custom import button
 from time import time
 from datetime import datetime
 
-DEAD_PIC = ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/c6f99c0b68ff07439ed72.jpg"
+DEAD_PIC = ALIVE_PIC if ALIVE_PIC else "https://te.legra.ph/file/b066ef5a06391f0151170.jpg"
   
 
-DEADLY = "✯ 𝗗𝗲𝗮𝗱𝗹𝘆 𝗦𝗽𝗮𝗺 𝗛𝗲𝗿𝗲 ✯\n\n"
-DEADLY += f"═══════════════════\n"
-DEADLY += f"• **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `3.10.1`\n"
-DEADLY += f"• **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `{version.__version__}`\n"
-DEADLY += f"• **ᴅᴇᴀᴅʟʏʙᴏᴛ ᴠᴇʀsɪᴏɴ**  : `{deadlyversion}`\n"
-DEADLY += f"═══════════════════\n\n"   
+DEADLY = "𝗦𝗮𝗻𝗸𝗶 𝗦𝗽𝗮𝗺 𝗕𝗼𝘁 ! 𝗧𝗵𝗶𝘀 𝗜𝘀 𝗦𝘂𝗽𝗲𝗿 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 𝗦𝗽𝗮𝗺 𝗕𝗼𝘁 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 @BrandSanki\n"
+DEADLY += f"𝗦𝘂𝗱𝗼 𝗢𝘄𝗻𝗲𝗿 [𝗛𝗲𝘅𝗼𝗿'𝘅𝗗](https://t.me/iTs_Hexor)"
 
                                   
 @BOT0.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
@@ -34,11 +30,11 @@ async def alive(event):
                                   caption=DEADLY,
                                   buttons=[
         [
-        Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/DEADLY_SPAMBOT"),
-        Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/DEADLY_SPAM_BOT")
+        Button.url("𝗚𝗿𝗼𝘂𝗽", "https://t.me/BrandSanki"),
+        Button.url("𝗦𝘂𝗽𝗽𝗼𝗿𝘁", "https://t.me/esport_Bots")
         ],
         [
-        Button.url("• ʀᴇᴘᴏ •", "https://github.com/Team-Deadly/DEADLY-SPAMBOT")
+        Button.url("𝗣𝗼𝘄𝗲𝗿𝗲𝗱", "https://t.me/iTs_hexor")
         ]
         ]
         )
@@ -87,7 +83,7 @@ async def ping(e):
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"🎉 🇵 🇴 🇳 🇬 !\n\n♡︎ `{ms}` 𝗺𝘀 ♡︎")
+        await event.edit(f"︎`{ms}` Ping ! #TeamSanki︎")
         
         
 
@@ -103,7 +99,7 @@ async def ping(e):
 @BOT9.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
 async def restart(e):
     if e.sender_id in SUDO_USERS:
-        text = "𝐑𝐞𝐥𝐨𝐚𝐝𝐢𝐧𝐠 ↪️.. Please Wait Until It Starts Again"
+        text = "𝗥𝗲𝘀𝘁𝗮𝗿𝘁 𝗕𝗼𝘁 🤟 𝗠𝘆 𝗠𝗮𝘀𝘁𝗲𝗿 𝗛𝗲𝘅𝗼𝗿'𝘅𝗗"
         await e.reply(text, parse_mode=None, link_preview=None)
         try:
             await BOT0.disconnect()
