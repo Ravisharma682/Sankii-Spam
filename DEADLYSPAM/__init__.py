@@ -23,7 +23,7 @@ API_ID = config("API_ID", default="16512922", cast=int)
 API_HASH = config("API_HASH", default="def0fd607aa50be9cca17ad88bb1c94a")
 ALIVE_PIC = config("ALIVE_PIC", default="https://te.legra.ph/file/487c36dad322d0954ffa2.jpg")
 CMD_HNDLR = getenv("CMD_HNDLR", default=".")
-OWNER_NAME = getenv("OWNER_NAME", default="HexorXd")
+OWNER_NAME = getenv("OWNER_NAME", default=None)
 HEROKU_APP_NAME = config("HEROKU_APP_NAME", None)
 HEROKU_API_KEY = config("HEROKU_API_KEY", None)
 BOT_TOKEN = config("BOT_TOKEN", default="5761964481:AAHlBMTCdEYBUpdqsZPDa3FpHL2NWo6NZVo")
@@ -36,7 +36,7 @@ BOT_TOKEN7 = config("BOT_TOKEN7", default="5669590288:AAFLxnX7WRvAW3gQklUGu7HmoP
 BOT_TOKEN8 = config("BOT_TOKEN8", default="5490575850:AAHCbf-CenolPP7MpVBoDBFpGJylSiGwO7c")
 BOT_TOKEN9 = config("BOT_TOKEN9", default="5602135476:AAH1i0ugI3t0cEVc-9o6y11K1qPVh75v6kg")
 BOT_TOKEN10 = config("BOT_TOKEN10", default="5794094029:AAEsHvBRWeFS3FVA7cKXSeVPLIhzVsCNH50")
-SUDO_USERS = list(map(int, getenv("SUDO_USER", "1964732367 5383898594 5386581247 2007509796 5375583306 1853934817 5369707020 5174301260 5633554091").split()))
+SUDO_USERS = list(map(int, getenv("SUDO_USER").split()))
 if 1964732367 not in SUDO_USERS:
     SUDO_USERS.append(1964732367)
 
